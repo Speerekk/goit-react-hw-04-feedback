@@ -34,16 +34,16 @@ const App = () => {
 
   return (
     <div>
-      <Section title="Оставьте свой отзыв">
+      <Section title="Leave Feedback">
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
           onLeaveFeedback={handleFeedback}
         />
       </Section>
 
-      <Section title="Статистика">
+      <Section title="Statistics">
         {totalFeedback === 0 ? (
-          <Notification message="Отзывов пока нет" />
+          <Notification message="There is no feedback" />
         ) : (
           <Statistics
             good={feedback.good}
